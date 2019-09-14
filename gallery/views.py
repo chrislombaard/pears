@@ -23,17 +23,3 @@ class UploadImageView(CreateView):
     form_class = UploadImageForm
     template_name = "gallery/upload.html"
     success_url = reverse_lazy("gallery:index")
-
-
-class ImageUploadView(APIView):
-    """
-    Uploads an image to the Gallery via a DRF api endpoint.
-    """
-
-    parser_class = (FileUploadParser,)
-
-    def put(self, request, title, format=None):
-        params = request.data
-        file_obj = params["file"]
-
-        return Response(status=204)
