@@ -1,0 +1,8 @@
+-r requirements.in
+
+pip-tools
+pylint
+pylint_django
+flake8
+mypy
+yapf
