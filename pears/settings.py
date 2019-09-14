@@ -112,7 +112,8 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "client/public/")
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media/public/')
+STATIC_ROOT=os.path.join(BASE_DIR, 'static/')
 
 GRAPHENE = {"SCHEMA": "pears.schema.schema"}
 CORS_ORIGIN_ALLOW_ALL = True

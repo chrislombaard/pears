@@ -68,5 +68,6 @@ settings_local.py
 dist/
 build/
 public/
+static/
 etc/*.json
 etc/*.csv
