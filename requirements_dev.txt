@@ -21,7 +21,7 @@ lazy-object-proxy==1.4.2  # via astroid
 mccabe==0.6.1             # via flake8, pylint
 mypy-extensions==0.4.1    # via mypy
 mypy==0.720
-pillow==6.1.0
+pillow==6.2.0
 pip-tools==4.1.0
 promise==2.2.1            # via graphene-django, graphql-core, graphql-relay
 pycodestyle==2.5.0        # via flake8
