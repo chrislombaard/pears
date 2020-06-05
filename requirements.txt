@@ -5,14 +5,14 @@
 #    pip-compile --output-file=requirements.txt etc/requirements.in
 #
 aniso8601==7.0.0          # via graphene
-django-cors-headers==3.1.0
-django==2.2.5
-djangorestframework==3.10.3
-graphene-django==2.5.0
+django-cors-headers==3.1.0  # via -r etc/requirements.in
+django==2.2.13            # via -r etc/requirements.in, django-cors-headers, graphene-django
+djangorestframework==3.10.3  # via -r etc/requirements.in
+graphene-django==2.5.0    # via -r etc/requirements.in
 graphene==2.1.8           # via graphene-django
 graphql-core==2.2.1       # via graphene, graphene-django, graphql-relay
 graphql-relay==2.0.0      # via graphene
-pillow==6.1.0
+pillow==6.1.0             # via -r etc/requirements.in
 promise==2.2.1            # via graphene-django, graphql-core, graphql-relay
 pytz==2019.2              # via django
 rx==1.6.1                 # via graphql-core
