@@ -4,36 +4,93 @@
 #
 #    pip-compile --output-file=requirements_dev.txt etc/requirements_dev.in
 #
-aniso8601==7.0.0          # via graphene
-astroid==2.2.5            # via pylint
-click==7.0                # via pip-tools
+aniso8601==7.0.0
+    # via graphene
+astroid==2.2.5
+    # via pylint
+click==7.0
+    # via pip-tools
 django-cors-headers==3.1.0
-django==2.2.5
+    # via -r etc/requirements.in
+django==2.2.22
+    # via
+    #   -r etc/requirements.in
+    #   django-cors-headers
+    #   graphene-django
 djangorestframework==3.10.3
-entrypoints==0.3          # via flake8
+    # via -r etc/requirements.in
+entrypoints==0.3
+    # via flake8
 flake8==3.7.8
+    # via -r etc/requirements_dev.in
 graphene-django==2.5.0
-graphene==2.1.8           # via graphene-django
-graphql-core==2.2.1       # via graphene, graphene-django, graphql-relay
-graphql-relay==2.0.0      # via graphene
-isort==4.3.21             # via pylint
-lazy-object-proxy==1.4.2  # via astroid
-mccabe==0.6.1             # via flake8, pylint
-mypy-extensions==0.4.1    # via mypy
+    # via -r etc/requirements.in
+graphene==2.1.8
+    # via graphene-django
+graphql-core==2.2.1
+    # via
+    #   graphene
+    #   graphene-django
+    #   graphql-relay
+graphql-relay==2.0.0
+    # via graphene
+isort==4.3.21
+    # via pylint
+lazy-object-proxy==1.4.2
+    # via astroid
+mccabe==0.6.1
+    # via
+    #   flake8
+    #   pylint
+mypy-extensions==0.4.1
+    # via mypy
 mypy==0.720
+    # via -r etc/requirements_dev.in
 pillow==6.1.0
+    # via -r etc/requirements.in
 pip-tools==4.1.0
-promise==2.2.1            # via graphene-django, graphql-core, graphql-relay
-pycodestyle==2.5.0        # via flake8
-pyflakes==2.1.1           # via flake8
+    # via -r etc/requirements_dev.in
+promise==2.2.1
+    # via
+    #   graphene-django
+    #   graphql-core
+    #   graphql-relay
+pycodestyle==2.5.0
+    # via flake8
+pyflakes==2.1.1
+    # via flake8
 pylint-django==2.0.11
-pylint-plugin-utils==0.5  # via pylint-django
+    # via -r etc/requirements_dev.in
+pylint-plugin-utils==0.5
+    # via pylint-django
 pylint==2.3.1
-pytz==2019.2              # via django
-rx==1.6.1                 # via graphql-core
-singledispatch==3.4.0.3   # via graphene-django
-six==1.12.0               # via astroid, graphene, graphene-django, graphql-core, graphql-relay, pip-tools, promise, singledispatch
-sqlparse==0.3.0           # via django
-typed-ast==1.4.0          # via astroid, mypy
-typing-extensions==3.7.4  # via mypy
-wrapt==1.11.2             # via astroid
+    # via
+    #   -r etc/requirements_dev.in
+    #   pylint-django
+    #   pylint-plugin-utils
+pytz==2019.2
+    # via django
+rx==1.6.1
+    # via graphql-core
+singledispatch==3.4.0.3
+    # via graphene-django
+six==1.12.0
+    # via
+    #   astroid
+    #   graphene
+    #   graphene-django
+    #   graphql-core
+    #   graphql-relay
+    #   pip-tools
+    #   promise
+    #   singledispatch
+sqlparse==0.3.0
+    # via django
+typed-ast==1.4.0
+    # via
+    #   astroid
+    #   mypy
+typing-extensions==3.7.4
+    # via mypy
+wrapt==1.11.2
+    # via astroid
