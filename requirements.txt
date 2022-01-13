@@ -4,18 +4,48 @@
 #
 #    pip-compile --output-file=requirements.txt etc/requirements.in
 #
-aniso8601==7.0.0          # via graphene
-django-cors-headers==3.1.0
+aniso8601==7.0.0
+    # via graphene
 django==2.2.5
+    # via
+    #   -r etc/requirements.in
+    #   django-cors-headers
+    #   graphene-django
+django-cors-headers==3.1.0
+    # via -r etc/requirements.in
 djangorestframework==3.10.3
+    # via -r etc/requirements.in
+graphene==2.1.8
+    # via graphene-django
 graphene-django==2.5.0
-graphene==2.1.8           # via graphene-django
-graphql-core==2.2.1       # via graphene, graphene-django, graphql-relay
-graphql-relay==2.0.0      # via graphene
-pillow==6.1.0
-promise==2.2.1            # via graphene-django, graphql-core, graphql-relay
-pytz==2019.2              # via django
-rx==1.6.1                 # via graphql-core
-singledispatch==3.4.0.3   # via graphene-django
-six==1.12.0               # via graphene, graphene-django, graphql-core, graphql-relay, promise, singledispatch
-sqlparse==0.3.0           # via django
+    # via -r etc/requirements.in
+graphql-core==2.2.1
+    # via
+    #   graphene
+    #   graphene-django
+    #   graphql-relay
+graphql-relay==2.0.0
+    # via graphene
+pillow==9.0.0
+    # via -r etc/requirements.in
+promise==2.2.1
+    # via
+    #   graphene-django
+    #   graphql-core
+    #   graphql-relay
+pytz==2019.2
+    # via django
+rx==1.6.1
+    # via graphql-core
+singledispatch==3.4.0.3
+    # via graphene-django
+six==1.12.0
+    # via
+    #   graphene
+    #   graphene-django
+    #   graphql-core
+    #   graphql-relay
+    #   promise
+    #   singledispatch
+sqlparse==0.3.0
+    # via django
